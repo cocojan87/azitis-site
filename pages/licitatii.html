@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Licitații Disponibile</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<h2>Licitații active</h2>
+<p>Selectează o licitație și trimite cererea de participare</p>
+
+<div class="item">
+    <h3>BMW Seria 5 2018</h3>
+    <p>Pornire licitație: <b>22,000 RON</b></p>
+    <button onclick="inscriere()">Participă</button>
+</div>
+
+<div class="item">
+    <h3>Apartament 3 camere - București</h3>
+    <p>Preț start: <b>230,000 RON</b></p>
+    <button onclick="inscriere()">Participă</button>
+</div>
+
+<div class="item">
+    <h3>Utilaj industrial</h3>
+    <p>Start licitație: <b>18,500 RON</b></p>
+    <button onclick="inscriere()">Participă</button>
+</div>
+
+<div id="msg" style="display:none;">
+    <h3>Cerere trimisă spre aprobare!</h3>
+    <p>Ești în așteptarea confirmării.</p>
+    <p>Taxa participare: <b>10%</b> – plata se acceptă cu card de debit sau virament.</p>
+    <p>Administratorul verifică identitatea conform GDPR pentru siguranță.</p>
+    <p>Vei fi contactat cât mai curând pentru aprobare + detalii plată.</p>
+</div>
+
+<script>
+function inscriere(){
+    document.getElementById("msg").style.display = "block";
+    window.scrollTo(0,document.body.scrollHeight);
+}
+</script>
+
+</body>
+</html>0
